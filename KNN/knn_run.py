@@ -28,6 +28,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 
+
 # Store accuracy scores for visualization
 accuracy_scores = []
 
@@ -43,6 +44,7 @@ for i in range(1, 10):
     
     # Append accuracy score for plotting
     accuracy_scores.append(accuracy_score(y_test, predictions))
+
 
 # Plot accuracy vs k
 sns.lineplot(x=range(1, len(accuracy_scores) + 1), y=accuracy_scores)
